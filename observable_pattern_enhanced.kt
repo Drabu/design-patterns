@@ -1,5 +1,6 @@
 /** Observalbe Pattern */
-//Playground link: https://pl.kotl.in/ZHkFL77-A
+// Playground link: https://pl.kotl.in/gzUzCynSS
+
 fun main() {
     val observableData = ObservableData<String>()
 
@@ -22,18 +23,18 @@ class ObservableData<T : Any> : Subject<T> {
 
     fun postValue(t: T) {
         any = t
-        notify(t)
+        notifyObservers()
     }
 
-    override fun notify(any: T) {
-        for (observer in observers) observer.update(any)
+    override fun notifyObservers() {
+        for (observer in observers) observer.update(any as T)
     }
 }
 
 interface Subject<T> {
     fun observe(observer: Observalbe<T>): Boolean
     fun removeObserver(observer: Observalbe<T>): Boolean
-    fun notify(any: T)
+    fun notifyObservers()
 }
 
 fun interface Observalbe<T> {
