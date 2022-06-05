@@ -1,6 +1,6 @@
 //Strategy Pattern
 //In strategy pattern you primarly focus on assignning values dynamically without re-writing a lot code 
-//https://pl.kotl.in/ngz-H6XJq
+//https://pl.kotl.in/jfxX1ctap
 fun main() {
 
     fly(MallardDuck())
