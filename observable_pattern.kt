@@ -1,4 +1,4 @@
-// https://pl.kotl.in/JpeRYHbwC
+// https://pl.kotl.in/EMC0YAZ2Z
 
 /** Observalbe Pattern */
 fun main() {
