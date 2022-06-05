@@ -1,4 +1,5 @@
 /** Observalbe Pattern */
+//Playground link: https://pl.kotl.in/ZHkFL77-A
 fun main() {
     val observableData = ObservableData<String>()
 
