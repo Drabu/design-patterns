@@ -1,6 +1,4 @@
-/** Observalbe Pattern */
-// Playground link: https://pl.kotl.in/gzUzCynSS
-
+/** Observalbe Pattern Playground link: https://pl.kotl.in/MURis5Y_Q */
 fun main() {
     val observableData = ObservableData<String>()
 
