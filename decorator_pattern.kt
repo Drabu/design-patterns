@@ -20,7 +20,7 @@ class Whip(brew: Bewrage) : Contindment(brew) {
     override fun cost() = bewrage.cost() + 9
 }
 
-abstract class Contindment(val bewrage: Bewrage) : Bewrage() {}
+abstract class Contindment(val bewrage: Bewrage) : Bewrage()
 
 abstract class Bewrage {
     private val description: String = "Unknown description"
